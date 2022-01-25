@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #8a2be2;
+    color: #fff;
+}
+
+header {
+    padding: 1em;
+    background: #212121; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 5em;
+}
+
+.main {
+    padding: 8em 0 0 0;
+    text-align: center;
+}
+
+.cube {
+    height: 15em;
+    background-color: #ececec;
+    width: 15em;
+    border-radius: 1em;
+    margin-right: 1em;
+    display: inline-block;
+    color: #212121;
+    position: relative;
+    box-shadow: 10px 5px 5px #212121;
+}
+
+.time {
+    padding-top: 4em;
+}
