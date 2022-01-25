@@ -31,7 +31,7 @@ angular.module('app').controller('HomeController', ['$scope','$interval', functi
 
         const hours = 24 - now.getHours();
 
-        if (minutes == 0) {
+        if ($scope.minutes == 0) {
             $scope.hours = hours;
         }
         else {
