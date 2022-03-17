@@ -33,20 +33,5 @@ main {
 }
 
 .time h3 {
-    color: darkgrey;
+    color: darkgrey;    
 }
-
-/* .cube {
-    background: #ececec;
-    border-radius: 1rem;
-    box-shadow: 10px 5px 5px #212121;
-    width: 12rem;
-    height: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.time {
-   font-size: 60%;
-} */

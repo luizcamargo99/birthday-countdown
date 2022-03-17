@@ -6,8 +6,8 @@ angular.module('app').controller('HomeController', ['$scope','$interval', functi
     $scope.DifferenceBetweenDates = function(date1, date2) {
         return Math.abs(date2 - date1) / (1000 * 3600 * 24);
     };
-
-    $scope.CountDown = function () {
+    
+    $scope.Countdown = function () {
 
         const now = new Date();
         let year = now.getFullYear();
@@ -15,35 +15,29 @@ angular.module('app').controller('HomeController', ['$scope','$interval', functi
         if (now.getMonth() >= 8){
             year += 1;
         }
-
-        const birthday = new Date(year+'-09-01T00:00:00');      
+        
+        const birthday = new Date(`${year}-09-01T00:00:00`);     
           
-        const seconds = 60 - now.getSeconds();
-
-        if (seconds == 60){
-            $scope.seconds = 0; 
-        }
-        else {
-            $scope.seconds = seconds;
-        }
+        $scope.CalculateSeconds(now);
 
         $scope.minutes = 60 - now.getMinutes();
 
-        const hours = 24 - now.getHours();
-
-        if ($scope.minutes == 0) {
-            $scope.hours = hours;
-        }
-        else {
-            $scope.hours = hours - 1;
-        }   
+        $scope.CalculateHours(now); 
 
         $scope.days = parseInt($scope.DifferenceBetweenDates(now, birthday));
     }
 
-    $interval($scope.CountDown, 1000);
+    $scope.CalculateSeconds = function (now) {
+        const seconds = 60 - now.getSeconds();
+        $scope.seconds = seconds === 60 ? 0 : seconds;
+    }
 
-    
+    $scope.CalculateHours = function (now) {
+        const hours = 24 - now.getHours();
+        $scope.hours = $scope.minutes === 0 ? hours : hours - 1;
+    }
+
+    $interval($scope.Countdown, 1000);    
 
 }]);
 
