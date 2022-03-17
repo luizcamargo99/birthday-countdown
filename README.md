@@ -17,8 +17,9 @@ This project consists of a countdown timer until my wife's birthday. I had fun c
 </ul>
 
 ## 💻 Interface Mockup 
-![Free-Apple-MacBook-Pro-16- -iPhone-13-Pro-Max-Mockup-PSD](https://user-images.githubusercontent.com/59785233/158846780-80860792-3e3f-4236-a5e9-f2a44cd61334.jpg)
-![Free-Macbook-Pro-Mockup-PSD-2018](https://user-images.githubusercontent.com/59785233/158846815-58aa5300-6bb4-4438-b014-019332d36635.jpg)
+![Free-Apple-MacBook-Pro-16- -iPhone-13-Pro-Max-Mockup-PSD](https://user-images.githubusercontent.com/59785233/158880338-a7eb401c-1d1e-4129-8652-522d2c10b717.jpg)
+
+![Free-Macbook-Pro-Mockup-PSD-2018](https://user-images.githubusercontent.com/59785233/158880355-6bf8ecd7-cae1-45d9-b830-7cc911a8b6ec.jpg)
 
 ## 🤔 How do I access the project?
 
